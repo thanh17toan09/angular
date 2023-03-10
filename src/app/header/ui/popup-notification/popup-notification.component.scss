@@ -1,0 +1,94 @@
+.header-notification {
+    position: absolute;
+    cursor: pointer;
+    top: 58px;
+    right: 30px;
+    width: 380px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px 8px rgba(0, 0, 0, 0.09);
+    background-color: #FFFFFF;
+    z-index: 1;
+
+    .header-notification_header {
+        display: flex;
+        height: 28px;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        gap: 100px;
+
+        .header-notification_header--left {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #28282B;
+        }
+        .header-notification_header--right:hover{
+            cursor: pointer;
+            color: orange;
+        }
+
+        .header-notification_header--right {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #28282B;
+        }
+    }
+
+    .header-notification_new {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #28282B;
+
+        flex: 1;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        margin: 5px 20px;
+        padding: 0px 10px;
+    }
+
+    .header-setting_footer-wrap{
+        .header-notification_list {
+            top: 146px;
+            height: 533.5px;
+            margin-top: 10px;
+    
+            .header-notification_list__item {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+    
+                align-items: center;
+                padding-left: 10px;
+                height: 72px;
+                margin-bottom: 1px;
+                border-radius: 2px;
+                background-color: #fff8ef;
+            }
+        }
+    }
+    .header-notification_list {
+        top: 146px;
+        height: 533.5px;
+        margin-top: 10px;
+
+        .header-notification_list__item {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            align-items: center;
+            padding-left: 10px;
+            height: 86px;
+            margin-bottom: 1px;
+            border-radius: 2px;
+            background-color: #fff8ef;
+        }
+    }
+}

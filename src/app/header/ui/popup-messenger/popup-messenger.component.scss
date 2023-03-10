@@ -1,0 +1,92 @@
+.header-messenger {
+    position: absolute;
+    cursor: pointer;
+    top: 58px;
+    right: 30px;
+    width: 380px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px 8px rgba(0, 0, 0, 0.09);
+    background-color: #FFFFFF;
+    z-index: 1;
+
+    .header-messenger_header {
+        display: flex;
+        height: 28px;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        gap: 10px;
+
+        .header-messenger_header--left {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #28282B;
+        }
+
+        .header-messenger_header--right {
+            display: block;
+        }
+    }
+
+    .header-messenger_search-wrap {
+        padding: 1px;
+        background-color: #f5f6fa;
+
+        .header-messenger_search {
+            flex: 1;
+            width: 320px;
+            height: 42px;
+            border-radius: 50px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin: 5px 20px;
+            padding: 0px 10px;
+
+            .header-messenger_search__input {
+                height: 20px;
+                width: 270px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.25px;
+                color: #C5C6C9;
+                background-color: white;
+                border: none;
+                outline: none;
+                display: flex;
+            }
+
+            .header-messenger_search__icon {
+                padding: 0 5px
+            }
+        }
+    }
+
+    .header-messenger_list {
+        top: 146px;
+        height: 533.5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        .header-messenger_list__item {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            align-items: center;
+            padding-left: 10px;
+            height: 56px;
+            width: 350px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            background-color: #fff8ef;
+        }
+    }
+}

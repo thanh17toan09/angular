@@ -1,13 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { LoginComponent } from './login/login.component';
+import { InformationUserComponent } from '../information-user/information-user.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'app', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'information-user' },
+  { path: 'information-user', component: InformationUserComponent },
 ];
 
 @NgModule({

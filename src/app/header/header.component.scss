@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    height: 56px;
+    flex-direction: row;
+    column-gap: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+
+    .header-left {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        margin-left: 20px;
+
+        .header-search {
+            flex: 1;
+            width: 180px;
+            height: 38px;
+            border-radius: 50px;
+            background-color: #E7E8EB;
+            display: flex;
+            align-items: center;
+
+            .header-search-input {
+                height: 16px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.25px;
+                color: black;
+                background-color: #E7E8EB;
+                border: none;
+                outline: none;
+            }
+
+            .header-search-icon {
+                padding: 0 5px
+            }
+        }
+    }
+
+    .header-center {
+        display: flex;
+        flex-direction: row;
+        width: 310px;
+        height: 56px;
+
+        gap: 5px;
+        padding-left: 177px;
+
+        &>div {
+            height: 100%;
+            width: 100px;
+            position: relative;
+
+            &>svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.2s linear;
+            }
+
+            &>svg:hover {
+                cursor: pointer;
+
+                &>path {
+                    fill: orange;
+                }
+
+                &>g {
+                    &>path {
+                        fill: orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-right {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        margin-right: 20px;
+        padding: 0px;
+        gap: 10px;
+        
+        &>div {
+            &>svg:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
